@@ -1,0 +1,23 @@
+<form name="form">
+	<label for="select"> Location: </label>
+	<select name="mySelect" id="mySelect" class="form-control"
+      ng-options="option.name for option in data.availableOptions track by option.id"
+      ng-model="user.location"></select>
+ 
+	<label>Date Depart:</label>
+	<p class="input-group">
+		<input type="date" class="form-control" datepicker-popup ng-model="user.depart" is-open="status1.opened" min-date="minDate1" max-date="'2020-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" ng-click="open1($event)" />
+		<span class="input-group-btn">
+			<button type="button" class="btn btn-default" ng-click="open1($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+		</span>
+	</p>	
+
+	<label>Date Return:</label>
+	<p class="input-group">
+		<input type="date" class="form-control" datepicker-popup ng-model="user.return" is-open="status2.opened" min-date="minDate2" max-date="'2020-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" ng-click="open2($event)" />
+		<span class="input-group-btn">
+			<button type="button" class="btn btn-default" ng-click="open2($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+		</span>
+	</p>	
+	<button type="button" ng-disabled="form.$invalid || form.$pristine" class="btn btn-default btn-md" ng-click="change(2)">Next</button>
+</form>

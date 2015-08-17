@@ -1,0 +1,25 @@
+body{
+	background-color: lightyellow;
+}
+.mainContainer{
+	width: 50%;
+	margin: 0 auto;
+}
+.mainContainer h1{
+	background-color: wheat;
+    text-align: center;
+}    
+.mainContainer p{
+	padding: 10px;
+    text-align: center;
+}
+#finalButton{
+	text-align: center;
+}    
+input.ng-invalid.ng-touched {
+    background-color: #FA787E;
+}
+input.ng-valid.ng-touched {
+    background-color: #78FA89;  
+}
+

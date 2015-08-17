@@ -1,0 +1,21 @@
+{
+  "name": "NGUI",
+  "version": "0.0.0",
+  "authors": [
+    "vishalnanania <vishal.nanania@gmail.com>"
+  ],
+  "description": "Thi is NGUI app",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.4.4",
+    "angular-bootstrap": "~0.13.3",
+    "bootstrap-css": "~3.3.4"
+  }
+}
