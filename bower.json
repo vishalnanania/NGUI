@@ -16,6 +16,6 @@
   "devDependencies": {
     "angular": "~1.4.4",
     "angular-bootstrap": "~0.13.3",
-    "bootstrap-css": "~3.3.4"
+    "bootstrap-css": "~3.1.1"
   }
 }
