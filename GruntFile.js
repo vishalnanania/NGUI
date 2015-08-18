@@ -26,12 +26,21 @@ module.exports = function(grunt) {
             dest: 'src/partials/css/style.css'
         }
         
+    },
+    serve: {
+        options: {
+            port: 9000,
+            'serve': {
+                'path': 'src'
+            }
+        }
     }  
   });
 
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('default', ['concat']);
+    grunt.loadNpmTasks('grunt-serve');
+    grunt.registerTask('default', ['concat', 'serve']);
     grunt.registerTask('javaScript', ['concat:dist']);
     grunt.registerTask('css', ['concat:css']);
 }
